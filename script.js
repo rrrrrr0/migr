@@ -69,7 +69,7 @@ function draw(){
   textAlign(CENTER);
   noStroke();
   //text(migrants.length, 20,20);
-  text('yıl:' + jumpers.getString(index-1, 'birth'), 50,50);
+  text(jumpers.getString(index-1, 'birth'), 50,50);
   recordPerFrame = map(track.value, 1, 100, 8, 50);
   for (var i=1; i < 82; i++){
     city = koord.matchRow(new RegExp(i), 0);
