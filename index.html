@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Şehirlerarası göç</title>
+  <script src="p5.min.js"></script>
+  <script src="mappa.js"></script>
+  <style>
+  * {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-variant: normal;
+  }
+  </style>
+</head>
+<body>
+  <button type="button" id="play" onclick="togglePlay()">&#x23f5;</button>
+  <select id="filter">
+    <option value="filtre">filtre</option>
+    <option value="ADANA">ADANA</option>
+    <option value="ADIYAMAN">ADIYAMAN</option>
+    <option value="AFYONKARAHISAR">AFYONKARAHISAR</option>
+    <option value="AGRI">AGRI</option>
+    <option value="AKSARAY">AKSARAY</option>
+    <option value="AMASYA">AMASYA</option>
+    <option value="ANKARA">ANKARA</option>
+    <option value="ANTALYA">ANTALYA</option>
+    <option value="ARDAHAN">ARDAHAN</option>
+    <option value="ARTVIN">ARTVIN</option>
+    <option value="AYDIN">AYDIN</option>
+    <option value="BALIKESIR">BALIKESIR</option>
+    <option value="BARTIN">BARTIN</option>
+    <option value="BATMAN">BATMAN</option>
+    <option value="BAYBURT">BAYBURT</option>
+    <option value="BILECIK">BILECIK</option>
+    <option value="BINGOL">BINGOL</option>
+    <option value="BITLIS">BITLIS</option>
+    <option value="BOLU">BOLU</option>
+    <option value="BURDUR">BURDUR</option>
+    <option value="BURSA">BURSA</option>
+    <option value="CANAKKALE">CANAKKALE</option>
+    <option value="CANKIRI">CANKIRI</option>
+    <option value="CORUM">CORUM</option>
+    <option value="DENIZLI">DENIZLI</option>
+    <option value="DIYARBAKIR">DIYARBAKIR</option>
+    <option value="DUZCE">DUZCE</option>
+    <option value="EDIRNE">EDIRNE</option>
+    <option value="ELAZIG">ELAZIG</option>
+    <option value="ERZINCAN">ERZINCAN</option>
+    <option value="ERZURUM">ERZURUM</option>
+    <option value="ESKISEHIR">ESKISEHIR</option>
+    <option value="GAZIANTEP">GAZIANTEP</option>
+    <option value="GIRESUN">GIRESUN</option>
+    <option value="GUMUSHANE">GUMUSHANE</option>
+    <option value="HAKKARI">HAKKARI</option>
+    <option value="HATAY">HATAY</option>
+    <option value="IGDIR">IGDIR</option>
+    <option value="ISPARTA">ISPARTA</option>
+    <option value="ISTANBUL">ISTANBUL</option>
+    <option value="IZMIR">IZMIR</option>
+    <option value="KAHRAMANMARAS">KAHRAMANMARAS</option>
+    <option value="KARABUK">KARABUK</option>
+    <option value="KARAMAN">KARAMAN</option>
+    <option value="KARS">KARS</option>
+    <option value="KASTAMONU">KASTAMONU</option>
+    <option value="KAYSERI">KAYSERI</option>
+    <option value="KIRIKKALE">KIRIKKALE</option>
+    <option value="KIRKLARELI">KIRKLARELI</option>
+    <option value="KIRSEHIR">KIRSEHIR</option>
+    <option value="KILIS">KILIS</option>
+    <option value="KOCAELI">KOCAELI</option>
+    <option value="KONYA">KONYA</option>
+    <option value="KUTAHYA">KUTAHYA</option>
+    <option value="MALATYA">MALATYA</option>
+    <option value="MANISA">MANISA</option>
+    <option value="MARDIN">MARDIN</option>
+    <option value="MERSIN">MERSIN</option>
+    <option value="MUGLA">MUGLA</option>
+    <option value="MUS">MUS</option>
+    <option value="NEVSEHIR">NEVSEHIR</option>
+    <option value="NIGDE">NIGDE</option>
+    <option value="ORDU">ORDU</option>
+    <option value="OSMANIYE">OSMANIYE</option>
+    <option value="RIZE">RIZE</option>
+    <option value="SAKARYA">SAKARYA</option>
+    <option value="SAMSUN">SAMSUN</option>
+    <option value="SIIRT">SIIRT</option>
+    <option value="SINOP">SINOP</option>
+    <option value="SIVAS">SIVAS</option>
+    <option value="SANLIURFA">SANLIURFA</option>
+    <option value="SIRNAK">SIRNAK</option>
+    <option value="TEKIRDAG">TEKIRDAG</option>
+    <option value="TOKAT">TOKAT</option>
+    <option value="TRABZON">TRABZON</option>
+    <option value="TUNCELI">TUNCELI</option>
+    <option value="USAK">USAK</option>
+    <option value="VAN">VAN</option>
+    <option value="YALOVA">YALOVA</option>
+    <option value="YOZGAT">YOZGAT</option>
+    <option value="ZONGULDAK">ZONGULDAK</option>
+  </select>
+  <label for="trail"><input type="checkbox" id="trail">iz</label>
+  <label for="track"><input type="range" min="1" max="100" value="10" id="track"> hız</label>
+  <script src="script.js"></script>
+</body>
+</html>
