@@ -64,11 +64,11 @@ function draw(){
   var year, orig, dest, origX, origY, destX, destY, popSize, city, idO, idD, pixO, pixD, particleSize;
   image(img, 0, 0);
   textFont('Verdana');
-  fill(100, 100, 100);
+  fill(255, 255, 255, 200);
   textSize(9);
   textAlign(CENTER);
   noStroke();
-  text(migrants.length, 20,20);
+  //text(migrants.length, 20,20);
   text('yıl:' + jumpers.getString(index-1, 'birth'), 50,50);
   recordPerFrame = map(track.value, 1, 100, 8, 50);
   for (var i=1; i < 82; i++){
@@ -76,6 +76,7 @@ function draw(){
     origX = city.getNum(2);
     origY = city.getNum(3);
     pixO = tr.latLngToPixel(origX, origY);
+    fill(255, 255, 255, 75);
     text(koord.getString(i-1, 'IL'), pixO.x, pixO.y -10);
     text(String.fromCharCode(0x23F5) + numberWithDots(immigrants[i]), pixO.x, pixO.y);
     text(String.fromCharCode(0x23F4) + numberWithDots(emigrants[i]), pixO.x, pixO.y + 10);
